@@ -37,4 +37,5 @@ public class CarritoService extends WebActionManager {
     public static void verificarCarritoVacio(){
         Assert.assertFalse("El carrito no esta vacio", isPresent(CarritoConstants.CONTADOR_NUMERO_CARRITO));
     }
+
 }

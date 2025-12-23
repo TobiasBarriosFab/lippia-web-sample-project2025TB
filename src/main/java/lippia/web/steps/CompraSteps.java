@@ -82,4 +82,10 @@ public class CompraSteps extends PageSteps {
     public void elUsuarioVisualizaLaEpica(String pMensaje) {
         CompraService.verificarCompraFinalizada(pMensaje);
     }
+
+    @Then("^el usuario visualiza el mensaje (.*)$")
+    public void elUsuarioVisualizaElMensaje(String mensajeError) {
+        CompraService.verificarMensajeError(mensajeError);
+
+    }
 }

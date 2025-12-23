@@ -53,6 +53,8 @@ public class CompraService extends WebActionManager {
     public static void verificarCompraFinalizada(String pMensaje){
         Assert.assertEquals("El mensaje no es el esperado", pMensaje, getElement(CompraConstants.TITULO_FINALIZAR_COMPRA_XPATH).getText());
     }
-
-
+    public static void verificarMensajeError(String mensajeEsperado) {
+        String mensajeActual = getElement(CompraConstants.MENSAJE_ERROR_CHECKOUT_XPATH).getText();
+        Assert.assertEquals("El mensaje de error no es el esperado", mensajeEsperado, mensajeActual);
+    }
 }

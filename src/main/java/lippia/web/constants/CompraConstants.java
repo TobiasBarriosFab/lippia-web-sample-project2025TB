@@ -14,4 +14,5 @@ public class CompraConstants {
     public static final String NOMBRE_PRODUCTO_OVERVIEW_XPATH = "xpath://div[@class='inventory_item_name' and text()='%s']";
     public static final String PRECIO_PRODUCTO_OVERVIEW_XPATH = "xpath://div[@class='cart_item']//div[@class='inventory_item_name' and text()='%s']//following::div[@class='inventory_item_price'][1]";
     public static final String TITULO_FINALIZAR_COMPRA_XPATH = "xpath://*[@id=\"checkout_complete_container\"]/h2";
+    public static final String MENSAJE_ERROR_CHECKOUT_XPATH = "xpath://*[@id=\"checkout_info_container\"]/div/form/div[1]/div[4]/h3";
 }
